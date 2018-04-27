@@ -72,6 +72,14 @@ class Plane:
         elif self.speed > constants.PLANE_MAX_SPEED:
             self.speed = constants.PLANE_MAX_SPEED
         self.plane_body.position += Vec2d(self.speed, 0).rotated(self.plane_body.angle)
+        if self.plane_body.position[0]>1210:
+            self.plane_body.position-=Vec2d(1220,0)
+        if self.plane_body.position[1]>810:
+            self.plane_body.position-=Vec2d(0,820)
+        if self.plane_body.position[0]<-10:
+            self.plane_body.position+=Vec2d(1220,0)
+        if self.plane_body.position[1]<-10:
+            self.plane_body.position+=Vec2d(0,820)    
         for i in range(len(self.hp_stripe_bodies)):
             self.hp_stripe_bodies[i].position = (self.plane_body.position[0] + i*5 - 8, self.plane_body.position[1] + 30)
         if self.ammo < constants.PLANE_STARTING_AMMO:

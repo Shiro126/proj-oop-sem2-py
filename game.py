@@ -182,12 +182,12 @@ class Game:
         """
 
         # Vertical walls
-        wall.spawn_wall(constants.SCREEN_HEIGHT, 10, 0, constants.SCREEN_HEIGHT / 2, self.space)
-        wall.spawn_wall(constants.SCREEN_HEIGHT, 10, constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT / 2, self.space)
+        #wall.spawn_wall(constants.SCREEN_HEIGHT, 10, 0, constants.SCREEN_HEIGHT / 2, self.space)
+       # wall.spawn_wall(constants.SCREEN_HEIGHT, 10, constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT / 2, self.space)
 
         # Horizontal walls
-        wall.spawn_wall(10, constants.SCREEN_WIDTH, constants.SCREEN_WIDTH / 2, 0, self.space)
-        wall.spawn_wall(10, constants.SCREEN_WIDTH, constants.SCREEN_WIDTH / 2, constants.SCREEN_HEIGHT, self.space)
+        #wall.spawn_wall(10, constants.SCREEN_WIDTH, constants.SCREEN_WIDTH / 2, 0, self.space)
+        #wall.spawn_wall(10, constants.SCREEN_WIDTH, constants.SCREEN_WIDTH / 2, constants.SCREEN_HEIGHT, self.space)
 
     def test_vs_dummy(self):
         """
